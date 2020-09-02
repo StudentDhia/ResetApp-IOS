@@ -1,0 +1,6 @@
+framework module Pods_resetIOSApp {
+  umbrella header "Pods-resetIOSApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

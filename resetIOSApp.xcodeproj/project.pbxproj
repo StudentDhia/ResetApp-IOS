@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D92228AF180D37B3069648F /* Pods_resetIOSApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC2C8DA75C477D26F2B8D66 /* Pods_resetIOSApp.framework */; };
+		CC114F672006ACB200BE3128 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CC114F662006ACB200BE3128 /* Settings.bundle */; };
+		CC1742E12004D0530010D6D5 /* DrinkingStatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1742E02004D0530010D6D5 /* DrinkingStatViewController.swift */; };
+		CC2420481FBCAFB90018EDCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2420471FBCAFB90018EDCB /* AppDelegate.swift */; };
+		CC24204A1FBCAFB90018EDCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2420491FBCAFB90018EDCB /* ViewController.swift */; };
+		CC24204D1FBCAFB90018EDCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC24204B1FBCAFB90018EDCB /* Main.storyboard */; };
+		CC2420501FBCAFB90018EDCB /* resetIOSApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC24204E1FBCAFB90018EDCB /* resetIOSApp.xcdatamodeld */; };
+		CC2420521FBCAFB90018EDCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2420511FBCAFB90018EDCB /* Assets.xcassets */; };
+		CC2420551FBCAFB90018EDCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2420531FBCAFB90018EDCB /* LaunchScreen.storyboard */; };
+		CC24205E1FBCF7470018EDCB /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC24205D1FBCF7470018EDCB /* Profile.storyboard */; };
+		CC6DE0EB1FC60C2700B371DE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE0EA1FC60C2700B371DE /* User.swift */; };
+		CC6DE0ED1FC6223900B371DE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE0EC1FC6223900B371DE /* SignUpViewController.swift */; };
+		CC6DE0EF1FC6504900B371DE /* Smoking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6DE0EE1FC6504900B371DE /* Smoking.storyboard */; };
+		CC6DE0F11FC6535F00B371DE /* SmokingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE0F01FC6535F00B371DE /* SmokingViewController.swift */; };
+		CC6DE0F31FC666AA00B371DE /* SmokingStatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE0F21FC666AA00B371DE /* SmokingStatViewController.swift */; };
+		CC6DE0F51FCF829B00B371DE /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE0F41FCF829B00B371DE /* ChartsViewController.swift */; };
+		CC6DE0FA1FCF9F7B00B371DE /* ExamplesDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE0F91FCF9F7B00B371DE /* ExamplesDefaults.swift */; };
+		CC6DE0FC1FCF9FA700B371DE /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE0FB1FCF9FA700B371DE /* Env.swift */; };
+		CC6DE0FE1FD8BDA800B371DE /* Drinking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6DE0FD1FD8BDA800B371DE /* Drinking.storyboard */; };
+		CC6DE1001FD8BDC500B371DE /* DrinkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE0FF1FD8BDC500B371DE /* DrinkingViewController.swift */; };
+		CC6DE1071FD8E56000B371DE /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6DE1061FD8E56000B371DE /* Setting.storyboard */; };
+		CC6DE1091FD8E7E700B371DE /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE1081FD8E7E700B371DE /* SettingViewController.swift */; };
+		CC6DE10C1FE1DF1D00B371DE /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6DE10B1FE1DF1D00B371DE /* Quiz.storyboard */; };
+		CC6DE10E1FE1E70500B371DE /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE10D1FE1E70500B371DE /* QuizViewController.swift */; };
+		CC6DE1101FE1E7CA00B371DE /* ChoixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE10F1FE1E7CA00B371DE /* ChoixViewController.swift */; };
+		CC6DE1121FE1E8DD00B371DE /* QuizCig1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE1111FE1E8DD00B371DE /* QuizCig1ViewController.swift */; };
+		CC6DE1141FE1E98000B371DE /* QuizCig2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE1131FE1E98000B371DE /* QuizCig2ViewController.swift */; };
+		CC6DE1161FE1EA8B00B371DE /* QuizCig3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE1151FE1EA8B00B371DE /* QuizCig3ViewController.swift */; };
+		CC6DE1181FE1EAEF00B371DE /* QuizCig4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE1171FE1EAEF00B371DE /* QuizCig4ViewController.swift */; };
+		CC6DE11A1FE1EBB000B371DE /* QuizCig5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE1191FE1EBB000B371DE /* QuizCig5ViewController.swift */; };
+		CC6DE11C1FE1EC5700B371DE /* QuizCig6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE11B1FE1EC5700B371DE /* QuizCig6ViewController.swift */; };
+		CC6DE11E1FE1EF2400B371DE /* QuizScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE11D1FE1EF2400B371DE /* QuizScoreViewController.swift */; };
+		CC6DE1201FE1F0D500B371DE /* QuizAlcohol1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE11F1FE1F0D500B371DE /* QuizAlcohol1ViewController.swift */; };
+		CC6DE1221FE1F0F400B371DE /* QuizAlcohol2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE1211FE1F0F400B371DE /* QuizAlcohol2ViewController.swift */; };
+		CC6DE1241FE20F2D00B371DE /* MissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE1231FE20F2D00B371DE /* MissionsViewController.swift */; };
+		CC6DE1261FE20F7D00B371DE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE1251FE20F7D00B371DE /* DetailsViewController.swift */; };
+		CC6DE12A1FE2140200B371DE /* TrophyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE1291FE2140200B371DE /* TrophyViewController.swift */; };
+		CC6DE12D1FE2184900B371DE /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6DE12C1FE2184900B371DE /* Game.storyboard */; };
+		CC6DE12F1FE2213000B371DE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE12E1FE2213000B371DE /* GameViewController.swift */; };
+		CC6DE1311FE25F0D00B371DE /* QuizAlcohol3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE1301FE25F0D00B371DE /* QuizAlcohol3ViewController.swift */; };
+		CC6DE1331FE2614500B371DE /* QuizAlcohol4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE1321FE2614500B371DE /* QuizAlcohol4ViewController.swift */; };
+		CC6DE1351FE263BA00B371DE /* QuizAlcohol5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE1341FE263BA00B371DE /* QuizAlcohol5ViewController.swift */; };
+		CC6DE1371FE263CA00B371DE /* QuizAlcohol6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE1361FE263CA00B371DE /* QuizAlcohol6ViewController.swift */; };
+		CC6DE1391FE2644B00B371DE /* QuizAlcohol7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE1381FE2644B00B371DE /* QuizAlcohol7ViewController.swift */; };
+		CC6DE13B1FE2646100B371DE /* QuizAlcohol8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE13A1FE2646100B371DE /* QuizAlcohol8ViewController.swift */; };
+		CC6DE13D1FE2649600B371DE /* QuizAlcohol9ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE13C1FE2649600B371DE /* QuizAlcohol9ViewController.swift */; };
+		CC6DE13F1FE264BA00B371DE /* QuizAlcohol10ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DE13E1FE264BA00B371DE /* QuizAlcohol10ViewController.swift */; };
+		CC7B9FB42007DD1800786410 /* DrinkingChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B9FB32007DD1700786410 /* DrinkingChartViewController.swift */; };
+		CC7B9FB62007EF5200786410 /* DailyQuizS1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B9FB52007EF5200786410 /* DailyQuizS1ViewController.swift */; };
+		CC7B9FB82007F0AF00786410 /* DailyQuizS2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B9FB72007F0AF00786410 /* DailyQuizS2ViewController.swift */; };
+		CC7B9FBA2007F46600786410 /* SmokingInfosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B9FB92007F46600786410 /* SmokingInfosViewController.swift */; };
+		CC7B9FBC2008321900786410 /* DailyQuizA1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B9FBB2008321900786410 /* DailyQuizA1ViewController.swift */; };
+		CC7B9FBE2008322D00786410 /* DailyQuizA2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B9FBD2008322D00786410 /* DailyQuizA2ViewController.swift */; };
+		CC7B9FC0200832A900786410 /* DrinkingInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B9FBF200832A900786410 /* DrinkingInfoViewController.swift */; };
+		CCC4FB321FC5D41900EA359B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC4FB311FC5D41900EA359B /* ProfileViewController.swift */; };
+		CCC9C5EB2008A76E00772F11 /* Trophy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC9C5EA2008A76E00772F11 /* Trophy.storyboard */; };
+		CCC9C5ED2008AFD700772F11 /* Infos1SmokingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9C5EC2008AFD700772F11 /* Infos1SmokingViewController.swift */; };
+		CCC9C5EF2008B00100772F11 /* Infos2SmokingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9C5EE2008B00100772F11 /* Infos2SmokingViewController.swift */; };
+		CCC9C5F12008B03500772F11 /* Infos3SmokingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9C5F02008B03500772F11 /* Infos3SmokingViewController.swift */; };
+		CCC9C5F32008B05600772F11 /* Infos4SmokingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9C5F22008B05600772F11 /* Infos4SmokingViewController.swift */; };
+		CCC9C5F52008B98500772F11 /* InfosA1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9C5F42008B98500772F11 /* InfosA1ViewController.swift */; };
+		CCC9C5F72008B9B300772F11 /* InfosA2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9C5F62008B9B300772F11 /* InfosA2ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B44E9DA9913E6EDB964F1A4A /* Pods-resetIOSApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-resetIOSApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-resetIOSApp/Pods-resetIOSApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CC114F662006ACB200BE3128 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = ../Settings.bundle; sourceTree = "<group>"; };
+		CC1742E02004D0530010D6D5 /* DrinkingStatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkingStatViewController.swift; sourceTree = "<group>"; };
+		CC2420441FBCAFB90018EDCB /* resetIOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = resetIOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC2420471FBCAFB90018EDCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC2420491FBCAFB90018EDCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC24204C1FBCAFB90018EDCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC24204F1FBCAFB90018EDCB /* resetIOSApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = resetIOSApp.xcdatamodel; sourceTree = "<group>"; };
+		CC2420511FBCAFB90018EDCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC2420541FBCAFB90018EDCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC2420561FBCAFB90018EDCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC24205D1FBCF7470018EDCB /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		CC6DE0EA1FC60C2700B371DE /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CC6DE0EC1FC6223900B371DE /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CC6DE0EE1FC6504900B371DE /* Smoking.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Smoking.storyboard; sourceTree = "<group>"; };
+		CC6DE0F01FC6535F00B371DE /* SmokingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmokingViewController.swift; sourceTree = "<group>"; };
+		CC6DE0F21FC666AA00B371DE /* SmokingStatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmokingStatViewController.swift; sourceTree = "<group>"; };
+		CC6DE0F41FCF829B00B371DE /* ChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
+		CC6DE0F91FCF9F7B00B371DE /* ExamplesDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplesDefaults.swift; sourceTree = "<group>"; };
+		CC6DE0FB1FCF9FA700B371DE /* Env.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
+		CC6DE0FD1FD8BDA800B371DE /* Drinking.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Drinking.storyboard; sourceTree = "<group>"; };
+		CC6DE0FF1FD8BDC500B371DE /* DrinkingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkingViewController.swift; sourceTree = "<group>"; };
+		CC6DE1061FD8E56000B371DE /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		CC6DE1081FD8E7E700B371DE /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		CC6DE10B1FE1DF1D00B371DE /* Quiz.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
+		CC6DE10D1FE1E70500B371DE /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		CC6DE10F1FE1E7CA00B371DE /* ChoixViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoixViewController.swift; sourceTree = "<group>"; };
+		CC6DE1111FE1E8DD00B371DE /* QuizCig1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCig1ViewController.swift; sourceTree = "<group>"; };
+		CC6DE1131FE1E98000B371DE /* QuizCig2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCig2ViewController.swift; sourceTree = "<group>"; };
+		CC6DE1151FE1EA8B00B371DE /* QuizCig3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCig3ViewController.swift; sourceTree = "<group>"; };
+		CC6DE1171FE1EAEF00B371DE /* QuizCig4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCig4ViewController.swift; sourceTree = "<group>"; };
+		CC6DE1191FE1EBB000B371DE /* QuizCig5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCig5ViewController.swift; sourceTree = "<group>"; };
+		CC6DE11B1FE1EC5700B371DE /* QuizCig6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCig6ViewController.swift; sourceTree = "<group>"; };
+		CC6DE11D1FE1EF2400B371DE /* QuizScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizScoreViewController.swift; sourceTree = "<group>"; };
+		CC6DE11F1FE1F0D500B371DE /* QuizAlcohol1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizAlcohol1ViewController.swift; sourceTree = "<group>"; };
+		CC6DE1211FE1F0F400B371DE /* QuizAlcohol2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizAlcohol2ViewController.swift; sourceTree = "<group>"; };
+		CC6DE1231FE20F2D00B371DE /* MissionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionsViewController.swift; sourceTree = "<group>"; };
+		CC6DE1251FE20F7D00B371DE /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		CC6DE1291FE2140200B371DE /* TrophyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrophyViewController.swift; sourceTree = "<group>"; };
+		CC6DE12C1FE2184900B371DE /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
+		CC6DE12E1FE2213000B371DE /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		CC6DE1301FE25F0D00B371DE /* QuizAlcohol3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizAlcohol3ViewController.swift; sourceTree = "<group>"; };
+		CC6DE1321FE2614500B371DE /* QuizAlcohol4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizAlcohol4ViewController.swift; sourceTree = "<group>"; };
+		CC6DE1341FE263BA00B371DE /* QuizAlcohol5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizAlcohol5ViewController.swift; sourceTree = "<group>"; };
+		CC6DE1361FE263CA00B371DE /* QuizAlcohol6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizAlcohol6ViewController.swift; sourceTree = "<group>"; };
+		CC6DE1381FE2644B00B371DE /* QuizAlcohol7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizAlcohol7ViewController.swift; sourceTree = "<group>"; };
+		CC6DE13A1FE2646100B371DE /* QuizAlcohol8ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizAlcohol8ViewController.swift; sourceTree = "<group>"; };
+		CC6DE13C1FE2649600B371DE /* QuizAlcohol9ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizAlcohol9ViewController.swift; sourceTree = "<group>"; };
+		CC6DE13E1FE264BA00B371DE /* QuizAlcohol10ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizAlcohol10ViewController.swift; sourceTree = "<group>"; };
+		CC7B9FB32007DD1700786410 /* DrinkingChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkingChartViewController.swift; sourceTree = "<group>"; };
+		CC7B9FB52007EF5200786410 /* DailyQuizS1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyQuizS1ViewController.swift; sourceTree = "<group>"; };
+		CC7B9FB72007F0AF00786410 /* DailyQuizS2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyQuizS2ViewController.swift; sourceTree = "<group>"; };
+		CC7B9FB92007F46600786410 /* SmokingInfosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmokingInfosViewController.swift; sourceTree = "<group>"; };
+		CC7B9FBB2008321900786410 /* DailyQuizA1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyQuizA1ViewController.swift; sourceTree = "<group>"; };
+		CC7B9FBD2008322D00786410 /* DailyQuizA2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyQuizA2ViewController.swift; sourceTree = "<group>"; };
+		CC7B9FBF200832A900786410 /* DrinkingInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkingInfoViewController.swift; sourceTree = "<group>"; };
+		CCC4FB311FC5D41900EA359B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CCC9C5EA2008A76E00772F11 /* Trophy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Trophy.storyboard; sourceTree = "<group>"; };
+		CCC9C5EC2008AFD700772F11 /* Infos1SmokingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Infos1SmokingViewController.swift; sourceTree = "<group>"; };
+		CCC9C5EE2008B00100772F11 /* Infos2SmokingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Infos2SmokingViewController.swift; sourceTree = "<group>"; };
+		CCC9C5F02008B03500772F11 /* Infos3SmokingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Infos3SmokingViewController.swift; sourceTree = "<group>"; };
+		CCC9C5F22008B05600772F11 /* Infos4SmokingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Infos4SmokingViewController.swift; sourceTree = "<group>"; };
+		CCC9C5F42008B98500772F11 /* InfosA1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfosA1ViewController.swift; sourceTree = "<group>"; };
+		CCC9C5F62008B9B300772F11 /* InfosA2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfosA2ViewController.swift; sourceTree = "<group>"; };
+		E9C12E9FA779AE211559F158 /* Pods-resetIOSApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-resetIOSApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-resetIOSApp/Pods-resetIOSApp.release.xcconfig"; sourceTree = "<group>"; };
+		EDC2C8DA75C477D26F2B8D66 /* Pods_resetIOSApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_resetIOSApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC2420411FBCAFB90018EDCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D92228AF180D37B3069648F /* Pods_resetIOSApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9347E399707E64F5AEA5A6B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B44E9DA9913E6EDB964F1A4A /* Pods-resetIOSApp.debug.xcconfig */,
+				E9C12E9FA779AE211559F158 /* Pods-resetIOSApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A6895A2AB14AC7D7536881EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDC2C8DA75C477D26F2B8D66 /* Pods_resetIOSApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC24203B1FBCAFB90018EDCB = {
+			isa = PBXGroup;
+			children = (
+				CC2420461FBCAFB90018EDCB /* resetIOSApp */,
+				CC2420451FBCAFB90018EDCB /* Products */,
+				9347E399707E64F5AEA5A6B7 /* Pods */,
+				A6895A2AB14AC7D7536881EB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CC2420451FBCAFB90018EDCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC2420441FBCAFB90018EDCB /* resetIOSApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC2420461FBCAFB90018EDCB /* resetIOSApp */ = {
+			isa = PBXGroup;
+			children = (
+				CC114F662006ACB200BE3128 /* Settings.bundle */,
+				CC6DE12B1FE2183600B371DE /* Game */,
+				CC6DE1281FE2112D00B371DE /* Trophy */,
+				CC6DE10A1FE1DF0000B371DE /* Quiz */,
+				CC6DE1051FD8E05100B371DE /* Setting */,
+				CC6DE1041FD8E03100B371DE /* Charts */,
+				CC6DE1031FD8D76E00B371DE /* Profile */,
+				CC6DE1021FD8D75000B371DE /* Drinking */,
+				CC6DE1011FD8D72000B371DE /* Smoking */,
+				CC2420471FBCAFB90018EDCB /* AppDelegate.swift */,
+				CC2420491FBCAFB90018EDCB /* ViewController.swift */,
+				CC2420511FBCAFB90018EDCB /* Assets.xcassets */,
+				CC24204B1FBCAFB90018EDCB /* Main.storyboard */,
+				CC2420531FBCAFB90018EDCB /* LaunchScreen.storyboard */,
+				CC2420561FBCAFB90018EDCB /* Info.plist */,
+				CC6DE0EA1FC60C2700B371DE /* User.swift */,
+				CC6DE0EC1FC6223900B371DE /* SignUpViewController.swift */,
+				CC24204E1FBCAFB90018EDCB /* resetIOSApp.xcdatamodeld */,
+				CC6DE0F91FCF9F7B00B371DE /* ExamplesDefaults.swift */,
+			);
+			path = resetIOSApp;
+			sourceTree = "<group>";
+		};
+		CC6DE1011FD8D72000B371DE /* Smoking */ = {
+			isa = PBXGroup;
+			children = (
+				CC6DE0F21FC666AA00B371DE /* SmokingStatViewController.swift */,
+				CC6DE0F01FC6535F00B371DE /* SmokingViewController.swift */,
+				CC6DE0EE1FC6504900B371DE /* Smoking.storyboard */,
+				CC6DE1231FE20F2D00B371DE /* MissionsViewController.swift */,
+				CC6DE1251FE20F7D00B371DE /* DetailsViewController.swift */,
+				CC6DE1291FE2140200B371DE /* TrophyViewController.swift */,
+				CC7B9FB52007EF5200786410 /* DailyQuizS1ViewController.swift */,
+				CC7B9FB72007F0AF00786410 /* DailyQuizS2ViewController.swift */,
+				CC7B9FB92007F46600786410 /* SmokingInfosViewController.swift */,
+				CCC9C5EC2008AFD700772F11 /* Infos1SmokingViewController.swift */,
+				CCC9C5EE2008B00100772F11 /* Infos2SmokingViewController.swift */,
+				CCC9C5F02008B03500772F11 /* Infos3SmokingViewController.swift */,
+				CCC9C5F22008B05600772F11 /* Infos4SmokingViewController.swift */,
+			);
+			name = Smoking;
+			sourceTree = "<group>";
+		};
+		CC6DE1021FD8D75000B371DE /* Drinking */ = {
+			isa = PBXGroup;
+			children = (
+				CC6DE0FF1FD8BDC500B371DE /* DrinkingViewController.swift */,
+				CC6DE0FD1FD8BDA800B371DE /* Drinking.storyboard */,
+				CC1742E02004D0530010D6D5 /* DrinkingStatViewController.swift */,
+				CC7B9FBB2008321900786410 /* DailyQuizA1ViewController.swift */,
+				CC7B9FBD2008322D00786410 /* DailyQuizA2ViewController.swift */,
+				CC7B9FBF200832A900786410 /* DrinkingInfoViewController.swift */,
+				CCC9C5F42008B98500772F11 /* InfosA1ViewController.swift */,
+				CCC9C5F62008B9B300772F11 /* InfosA2ViewController.swift */,
+			);
+			name = Drinking;
+			sourceTree = "<group>";
+		};
+		CC6DE1031FD8D76E00B371DE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CCC4FB311FC5D41900EA359B /* ProfileViewController.swift */,
+				CC24205D1FBCF7470018EDCB /* Profile.storyboard */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		CC6DE1041FD8E03100B371DE /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				CC6DE0FB1FCF9FA700B371DE /* Env.swift */,
+				CC6DE0F41FCF829B00B371DE /* ChartsViewController.swift */,
+				CC7B9FB32007DD1700786410 /* DrinkingChartViewController.swift */,
+			);
+			name = Charts;
+			sourceTree = "<group>";
+		};
+		CC6DE1051FD8E05100B371DE /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				CC6DE1061FD8E56000B371DE /* Setting.storyboard */,
+				CC6DE1081FD8E7E700B371DE /* SettingViewController.swift */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		CC6DE10A1FE1DF0000B371DE /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				CC6DE10B1FE1DF1D00B371DE /* Quiz.storyboard */,
+				CC6DE10D1FE1E70500B371DE /* QuizViewController.swift */,
+				CC6DE10F1FE1E7CA00B371DE /* ChoixViewController.swift */,
+				CC6DE1111FE1E8DD00B371DE /* QuizCig1ViewController.swift */,
+				CC6DE1131FE1E98000B371DE /* QuizCig2ViewController.swift */,
+				CC6DE1151FE1EA8B00B371DE /* QuizCig3ViewController.swift */,
+				CC6DE1171FE1EAEF00B371DE /* QuizCig4ViewController.swift */,
+				CC6DE1191FE1EBB000B371DE /* QuizCig5ViewController.swift */,
+				CC6DE11B1FE1EC5700B371DE /* QuizCig6ViewController.swift */,
+				CC6DE11D1FE1EF2400B371DE /* QuizScoreViewController.swift */,
+				CC6DE11F1FE1F0D500B371DE /* QuizAlcohol1ViewController.swift */,
+				CC6DE1211FE1F0F400B371DE /* QuizAlcohol2ViewController.swift */,
+				CC6DE1301FE25F0D00B371DE /* QuizAlcohol3ViewController.swift */,
+				CC6DE1321FE2614500B371DE /* QuizAlcohol4ViewController.swift */,
+				CC6DE1341FE263BA00B371DE /* QuizAlcohol5ViewController.swift */,
+				CC6DE1361FE263CA00B371DE /* QuizAlcohol6ViewController.swift */,
+				CC6DE1381FE2644B00B371DE /* QuizAlcohol7ViewController.swift */,
+				CC6DE13A1FE2646100B371DE /* QuizAlcohol8ViewController.swift */,
+				CC6DE13C1FE2649600B371DE /* QuizAlcohol9ViewController.swift */,
+				CC6DE13E1FE264BA00B371DE /* QuizAlcohol10ViewController.swift */,
+			);
+			name = Quiz;
+			sourceTree = "<group>";
+		};
+		CC6DE1281FE2112D00B371DE /* Trophy */ = {
+			isa = PBXGroup;
+			children = (
+				CCC9C5EA2008A76E00772F11 /* Trophy.storyboard */,
+			);
+			name = Trophy;
+			sourceTree = "<group>";
+		};
+		CC6DE12B1FE2183600B371DE /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				CC6DE12C1FE2184900B371DE /* Game.storyboard */,
+				CC6DE12E1FE2213000B371DE /* GameViewController.swift */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC2420431FBCAFB90018EDCB /* resetIOSApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC2420591FBCAFB90018EDCB /* Build configuration list for PBXNativeTarget "resetIOSApp" */;
+			buildPhases = (
+				B7D7ED3D9C449D02347A1EDD /* [CP] Check Pods Manifest.lock */,
+				CC2420401FBCAFB90018EDCB /* Sources */,
+				CC2420411FBCAFB90018EDCB /* Frameworks */,
+				CC2420421FBCAFB90018EDCB /* Resources */,
+				5D4C8B961FB7D351EC463978 /* [CP] Embed Pods Frameworks */,
+				DCD8DC641148E4820E0ECEED /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = resetIOSApp;
+			productName = resetIOSApp;
+			productReference = CC2420441FBCAFB90018EDCB /* resetIOSApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC24203C1FBCAFB90018EDCB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Walid Helaoui";
+				TargetAttributes = {
+					CC2420431FBCAFB90018EDCB = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CC24203F1FBCAFB90018EDCB /* Build configuration list for PBXProject "resetIOSApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC24203B1FBCAFB90018EDCB;
+			productRefGroup = CC2420451FBCAFB90018EDCB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC2420431FBCAFB90018EDCB /* resetIOSApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC2420421FBCAFB90018EDCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC2420551FBCAFB90018EDCB /* LaunchScreen.storyboard in Resources */,
+				CC6DE0EF1FC6504900B371DE /* Smoking.storyboard in Resources */,
+				CC114F672006ACB200BE3128 /* Settings.bundle in Resources */,
+				CC6DE1071FD8E56000B371DE /* Setting.storyboard in Resources */,
+				CC6DE12D1FE2184900B371DE /* Game.storyboard in Resources */,
+				CC2420521FBCAFB90018EDCB /* Assets.xcassets in Resources */,
+				CC24204D1FBCAFB90018EDCB /* Main.storyboard in Resources */,
+				CC24205E1FBCF7470018EDCB /* Profile.storyboard in Resources */,
+				CCC9C5EB2008A76E00772F11 /* Trophy.storyboard in Resources */,
+				CC6DE0FE1FD8BDA800B371DE /* Drinking.storyboard in Resources */,
+				CC6DE10C1FE1DF1D00B371DE /* Quiz.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D4C8B961FB7D351EC463978 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-resetIOSApp/Pods-resetIOSApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CHIPageControl/CHIPageControl.framework",
+				"${BUILT_PRODUCTS_DIR}/DCAnimationKit/DCAnimationKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FillableLoaders/FillableLoaders.framework",
+				"${BUILT_PRODUCTS_DIR}/GuillotineMenu/GuillotineMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/LinearProgressView/LinearProgressView.framework",
+				"${BUILT_PRODUCTS_DIR}/Pulsator/Pulsator.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftCharts/SwiftCharts.framework",
+				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
+				"${BUILT_PRODUCTS_DIR}/YLProgressBar/YLProgressBar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHIPageControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DCAnimationKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FillableLoaders.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GuillotineMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LinearProgressView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pulsator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCharts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YLProgressBar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-resetIOSApp/Pods-resetIOSApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7D7ED3D9C449D02347A1EDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-resetIOSApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCD8DC641148E4820E0ECEED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-resetIOSApp/Pods-resetIOSApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC2420401FBCAFB90018EDCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC6DE1331FE2614500B371DE /* QuizAlcohol4ViewController.swift in Sources */,
+				CC7B9FB42007DD1800786410 /* DrinkingChartViewController.swift in Sources */,
+				CCC9C5F32008B05600772F11 /* Infos4SmokingViewController.swift in Sources */,
+				CC6DE12F1FE2213000B371DE /* GameViewController.swift in Sources */,
+				CC6DE0ED1FC6223900B371DE /* SignUpViewController.swift in Sources */,
+				CC6DE1311FE25F0D00B371DE /* QuizAlcohol3ViewController.swift in Sources */,
+				CC6DE1101FE1E7CA00B371DE /* ChoixViewController.swift in Sources */,
+				CC6DE10E1FE1E70500B371DE /* QuizViewController.swift in Sources */,
+				CC6DE12A1FE2140200B371DE /* TrophyViewController.swift in Sources */,
+				CC6DE1121FE1E8DD00B371DE /* QuizCig1ViewController.swift in Sources */,
+				CC7B9FB62007EF5200786410 /* DailyQuizS1ViewController.swift in Sources */,
+				CC24204A1FBCAFB90018EDCB /* ViewController.swift in Sources */,
+				CC6DE1241FE20F2D00B371DE /* MissionsViewController.swift in Sources */,
+				CC6DE13D1FE2649600B371DE /* QuizAlcohol9ViewController.swift in Sources */,
+				CCC9C5F52008B98500772F11 /* InfosA1ViewController.swift in Sources */,
+				CC6DE0FA1FCF9F7B00B371DE /* ExamplesDefaults.swift in Sources */,
+				CC6DE1351FE263BA00B371DE /* QuizAlcohol5ViewController.swift in Sources */,
+				CC6DE13F1FE264BA00B371DE /* QuizAlcohol10ViewController.swift in Sources */,
+				CC6DE11E1FE1EF2400B371DE /* QuizScoreViewController.swift in Sources */,
+				CC6DE1091FD8E7E700B371DE /* SettingViewController.swift in Sources */,
+				CC7B9FB82007F0AF00786410 /* DailyQuizS2ViewController.swift in Sources */,
+				CC1742E12004D0530010D6D5 /* DrinkingStatViewController.swift in Sources */,
+				CC6DE11A1FE1EBB000B371DE /* QuizCig5ViewController.swift in Sources */,
+				CC2420481FBCAFB90018EDCB /* AppDelegate.swift in Sources */,
+				CC7B9FBE2008322D00786410 /* DailyQuizA2ViewController.swift in Sources */,
+				CCC9C5F72008B9B300772F11 /* InfosA2ViewController.swift in Sources */,
+				CC7B9FBA2007F46600786410 /* SmokingInfosViewController.swift in Sources */,
+				CC6DE1261FE20F7D00B371DE /* DetailsViewController.swift in Sources */,
+				CC6DE0F51FCF829B00B371DE /* ChartsViewController.swift in Sources */,
+				CC6DE13B1FE2646100B371DE /* QuizAlcohol8ViewController.swift in Sources */,
+				CC6DE1001FD8BDC500B371DE /* DrinkingViewController.swift in Sources */,
+				CC6DE1141FE1E98000B371DE /* QuizCig2ViewController.swift in Sources */,
+				CC2420501FBCAFB90018EDCB /* resetIOSApp.xcdatamodeld in Sources */,
+				CC6DE0EB1FC60C2700B371DE /* User.swift in Sources */,
+				CC6DE1371FE263CA00B371DE /* QuizAlcohol6ViewController.swift in Sources */,
+				CC6DE1161FE1EA8B00B371DE /* QuizCig3ViewController.swift in Sources */,
+				CC6DE1391FE2644B00B371DE /* QuizAlcohol7ViewController.swift in Sources */,
+				CC7B9FBC2008321900786410 /* DailyQuizA1ViewController.swift in Sources */,
+				CC6DE0F31FC666AA00B371DE /* SmokingStatViewController.swift in Sources */,
+				CC7B9FC0200832A900786410 /* DrinkingInfoViewController.swift in Sources */,
+				CC6DE1181FE1EAEF00B371DE /* QuizCig4ViewController.swift in Sources */,
+				CCC9C5EF2008B00100772F11 /* Infos2SmokingViewController.swift in Sources */,
+				CC6DE0F11FC6535F00B371DE /* SmokingViewController.swift in Sources */,
+				CCC9C5F12008B03500772F11 /* Infos3SmokingViewController.swift in Sources */,
+				CC6DE11C1FE1EC5700B371DE /* QuizCig6ViewController.swift in Sources */,
+				CCC4FB321FC5D41900EA359B /* ProfileViewController.swift in Sources */,
+				CC6DE1201FE1F0D500B371DE /* QuizAlcohol1ViewController.swift in Sources */,
+				CC6DE1221FE1F0F400B371DE /* QuizAlcohol2ViewController.swift in Sources */,
+				CCC9C5ED2008AFD700772F11 /* Infos1SmokingViewController.swift in Sources */,
+				CC6DE0FC1FCF9FA700B371DE /* Env.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CC24204B1FBCAFB90018EDCB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC24204C1FBCAFB90018EDCB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC2420531FBCAFB90018EDCB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC2420541FBCAFB90018EDCB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC2420571FBCAFB90018EDCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC2420581FBCAFB90018EDCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC24205A1FBCAFB90018EDCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B44E9DA9913E6EDB964F1A4A /* Pods-resetIOSApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = resetIOSApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.esprit.reset;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CC24205B1FBCAFB90018EDCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9C12E9FA779AE211559F158 /* Pods-resetIOSApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = resetIOSApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.esprit.reset;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC24203F1FBCAFB90018EDCB /* Build configuration list for PBXProject "resetIOSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC2420571FBCAFB90018EDCB /* Debug */,
+				CC2420581FBCAFB90018EDCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC2420591FBCAFB90018EDCB /* Build configuration list for PBXNativeTarget "resetIOSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC24205A1FBCAFB90018EDCB /* Debug */,
+				CC24205B1FBCAFB90018EDCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CC24204E1FBCAFB90018EDCB /* resetIOSApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CC24204F1FBCAFB90018EDCB /* resetIOSApp.xcdatamodel */,
+			);
+			currentVersion = CC24204F1FBCAFB90018EDCB /* resetIOSApp.xcdatamodel */;
+			path = resetIOSApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CC24203C1FBCAFB90018EDCB /* Project object */;
+}

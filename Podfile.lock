@@ -1,0 +1,66 @@
+PODS:
+  - Alamofire (4.5.1)
+  - CHIPageControl (0.1.4):
+    - CHIPageControl/Aji (= 0.1.4)
+    - CHIPageControl/Aleppo (= 0.1.4)
+    - CHIPageControl/Chimayo (= 0.1.4)
+    - CHIPageControl/Fresno (= 0.1.4)
+    - CHIPageControl/Jalapeno (= 0.1.4)
+    - CHIPageControl/Jaloro (= 0.1.4)
+    - CHIPageControl/Paprika (= 0.1.4)
+    - CHIPageControl/Puya (= 0.1.4)
+  - CHIPageControl/Aji (0.1.4)
+  - CHIPageControl/Aleppo (0.1.4)
+  - CHIPageControl/Chimayo (0.1.4)
+  - CHIPageControl/Fresno (0.1.4)
+  - CHIPageControl/Jalapeno (0.1.4)
+  - CHIPageControl/Jaloro (0.1.4)
+  - CHIPageControl/Paprika (0.1.4)
+  - CHIPageControl/Puya (0.1.4)
+  - DCAnimationKit (0.0.6)
+  - FillableLoaders (1.3.0)
+  - GuillotineMenu (3.0.1)
+  - LinearProgressView (2.0.0)
+  - Pulsator (0.4.0)
+  - SVProgressHUD (2.2.2)
+  - SwiftCharts (0.6)
+  - UICircularProgressRing (1.7.4)
+  - YLProgressBar (3.10.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - CHIPageControl (~> 0.1.3)
+  - CHIPageControl/Aji
+  - CHIPageControl/Aleppo
+  - CHIPageControl/Chimayo
+  - CHIPageControl/Fresno
+  - CHIPageControl/Jalapeno
+  - CHIPageControl/Jaloro
+  - CHIPageControl/Paprika
+  - CHIPageControl/Puya
+  - DCAnimationKit
+  - FillableLoaders (~> 1.3.0)
+  - GuillotineMenu (~> 3.0)
+  - LinearProgressView
+  - Pulsator
+  - SVProgressHUD
+  - SwiftCharts (~> 0.6)
+  - UICircularProgressRing
+  - YLProgressBar (~> 3.10.2)
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  CHIPageControl: 032b5ab68506c00711d5a61bd83e9fdf2a7ecb22
+  DCAnimationKit: 7133bef877ce1aa113dcfeea1380ca67f91f7608
+  FillableLoaders: 4decb0c33ce84a7da0da7be6b0fb15a87cb9906b
+  GuillotineMenu: d186bcb1b827d9c2b8da564bc4535a0c4413acb1
+  LinearProgressView: 2e71a3a937b93488f381088f0ba27f2ff52bb26c
+  Pulsator: a0e7c006790a576de63280b2f0552ea1c1b83ce0
+  SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
+  SwiftCharts: d8e6d60679bc982f48f8bea25cf5c1b94fcfec4f
+  UICircularProgressRing: 5aca63423d913dc967661370e94e2af0770dd9cd
+  YLProgressBar: 365b6c5e934be18b661f79413db33c993c8e8251
+
+PODFILE CHECKSUM: 7a3ab644048c89e6fde305a6a0ed6c77c4fe4df7
+
+COCOAPODS: 1.3.1

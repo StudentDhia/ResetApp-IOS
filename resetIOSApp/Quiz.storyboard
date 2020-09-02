@@ -1,0 +1,1541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="JoP-i5-uvR">
+            <objects>
+                <viewController storyboardIdentifier="Quiz" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HuZ-Zz-wUD" customClass="ViewController" customModule="resetIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LHe-AR-I9y"/>
+                        <viewControllerLayoutGuide type="bottom" id="WUL-Bg-Gpt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="y0d-dx-cdx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi there" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHW-XI-w9P">
+                                <rect key="frame" x="61" y="190" width="255" height="31.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monokuma" translatesAutoresizingMaskIntoConstraints="NO" id="JER-L4-mzh">
+                                <rect key="frame" x="0.0" y="468" width="142" height="199"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="bvM-fM-h63"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GHW-XI-w9P" firstAttribute="leading" secondItem="y0d-dx-cdx" secondAttribute="leadingMargin" constant="45" id="7WS-AW-2eH"/>
+                            <constraint firstItem="JER-L4-mzh" firstAttribute="leading" secondItem="y0d-dx-cdx" secondAttribute="leading" id="8jc-Gx-3dZ"/>
+                            <constraint firstItem="JER-L4-mzh" firstAttribute="top" secondItem="LHe-AR-I9y" secondAttribute="bottom" constant="448" id="Quf-nR-Gyb"/>
+                            <constraint firstItem="GHW-XI-w9P" firstAttribute="top" secondItem="LHe-AR-I9y" secondAttribute="bottom" constant="170" id="Tg2-BC-AES"/>
+                            <constraint firstItem="WUL-Bg-Gpt" firstAttribute="top" secondItem="JER-L4-mzh" secondAttribute="bottom" id="ZRa-hX-vhb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GHW-XI-w9P" secondAttribute="trailing" constant="43" id="cA9-bt-lrI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DOf-mo-qgs"/>
+                    <connections>
+                        <outlet property="avatar" destination="JER-L4-mzh" id="7qP-SI-b25"/>
+                        <outlet property="bienvenue" destination="GHW-XI-w9P" id="tB9-W6-nbb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z4S-jA-XFU" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="123.68815592203899"/>
+        </scene>
+        <!--Quiz Cig1 View Controller-->
+        <scene sceneID="UhR-Ci-xZI">
+            <objects>
+                <viewController storyboardIdentifier="S1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="thz-4F-Ee4" customClass="QuizCig1ViewController" customModule="resetIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ovP-qG-I0u"/>
+                        <viewControllerLayoutGuide type="bottom" id="ANi-wj-Q7i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bwN-TD-7VR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How soon after waking do you smoke your first cigarette" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyA-NS-o14">
+                                <rect key="frame" x="16" y="135" width="343" height="69"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anl-Si-LGY">
+                                <rect key="frame" x="0.0" y="253" width="375" height="65"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="jnC-xK-crN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Within 5 minutes">
+                                    <color key="titleColor" red="0.1971340674" green="0.1971340674" blue="0.1971340674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ajout1:" destination="thz-4F-Ee4" eventType="touchUpInside" id="e5e-Gi-msd"/>
+                                    <segue destination="Vn5-wb-KoC" kind="show" identifier="segueC3Q1" id="tFD-YR-cJE">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6Y-Hy-Kx4">
+                                <rect key="frame" x="0.0" y="342" width="375" height="65"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="5-30 minutes">
+                                    <color key="titleColor" red="0.1971340674" green="0.1971340674" blue="0.1971340674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ajout1Q1:" destination="thz-4F-Ee4" eventType="touchUpInside" id="sAu-Fd-53i"/>
+                                    <segue destination="Vn5-wb-KoC" kind="show" identifier="segueC2Q1" id="Ilu-z5-aJ5">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4d-R6-g8H">
+                                <rect key="frame" x="0.0" y="431" width="375" height="65"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="8ez-z9-Mt7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="31-60 minutes">
+                                    <color key="titleColor" red="0.1971340674" green="0.1971340674" blue="0.1971340674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ajout2Q1:" destination="thz-4F-Ee4" eventType="touchUpInside" id="a6a-Jf-umw"/>
+                                    <segue destination="Vn5-wb-KoC" kind="show" identifier="segueC1Q1" id="K59-S9-y1G">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="D4d-R6-g8H" firstAttribute="trailing" secondItem="S6Y-Hy-Kx4" secondAttribute="trailing" id="1UC-Y3-czo"/>
+                            <constraint firstItem="OyA-NS-o14" firstAttribute="centerX" secondItem="anl-Si-LGY" secondAttribute="centerX" id="BTL-YH-1qD"/>
+                            <constraint firstItem="D4d-R6-g8H" firstAttribute="top" secondItem="S6Y-Hy-Kx4" secondAttribute="bottom" constant="24" id="Djc-VA-mPl"/>
+                            <constraint firstItem="S6Y-Hy-Kx4" firstAttribute="top" secondItem="anl-Si-LGY" secondAttribute="bottom" constant="24" id="Mlz-hg-ETE"/>
+                            <constraint firstItem="D4d-R6-g8H" firstAttribute="leading" secondItem="S6Y-Hy-Kx4" secondAttribute="leading" id="P6H-bd-R3h"/>
+                            <constraint firstItem="anl-Si-LGY" firstAttribute="trailing" secondItem="S6Y-Hy-Kx4" secondAttribute="trailing" id="PAi-y5-rBF"/>
+                            <constraint firstItem="S6Y-Hy-Kx4" firstAttribute="leading" secondItem="bwN-TD-7VR" secondAttribute="leading" id="REu-7m-8zM"/>
+                            <constraint firstItem="ANi-wj-Q7i" firstAttribute="top" secondItem="D4d-R6-g8H" secondAttribute="bottom" constant="171" id="XgX-52-rpW"/>
+                            <constraint firstItem="anl-Si-LGY" firstAttribute="top" secondItem="bwN-TD-7VR" secondAttribute="top" constant="253" id="ZAz-Iv-Nvf"/>
+                            <constraint firstItem="OyA-NS-o14" firstAttribute="leading" secondItem="bwN-TD-7VR" secondAttribute="leadingMargin" id="dyG-II-pcg"/>
+                            <constraint firstItem="OyA-NS-o14" firstAttribute="top" secondItem="ovP-qG-I0u" secondAttribute="bottom" constant="115" id="hNf-kx-fsZ"/>
+                            <constraint firstAttribute="trailing" secondItem="S6Y-Hy-Kx4" secondAttribute="trailing" id="jg4-Zs-HPv"/>
+                            <constraint firstItem="anl-Si-LGY" firstAttribute="leading" secondItem="S6Y-Hy-Kx4" secondAttribute="leading" id="rO9-Rq-XnH"/>
+                            <constraint firstItem="anl-Si-LGY" firstAttribute="top" secondItem="OyA-NS-o14" secondAttribute="bottom" constant="49" id="tFG-gA-8d8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Add1Q1" destination="anl-Si-LGY" id="rkr-sg-jfu"/>
+                        <outlet property="Add2Q1" destination="S6Y-Hy-Kx4" id="chw-xr-bCs"/>
+                        <outlet property="Add3Q1" destination="D4d-R6-g8H" id="JBQ-8C-IOf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="woS-RI-6FI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1973.5999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--Quiz Cig2 View Controller-->
+        <scene sceneID="UeC-wO-ZyD">
+            <objects>
+                <viewController storyboardIdentifier="S2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vn5-wb-KoC" customClass="QuizCig2ViewController" customModule="resetIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qjX-GF-Rdv"/>
+                        <viewControllerLayoutGuide type="bottom" id="j6O-KL-pEw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rSg-me-C6H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do you find it hard to refrain from smoking in places where it's forbidden" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5u-Tj-io4">
+                                <rect key="frame" x="16" y="125" width="343" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbg-E4-eb7">
+                                <rect key="frame" x="0.0" y="290" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Yes">
+                                    <color key="titleColor" red="0.1971340674" green="0.1971340674" blue="0.1971340674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ajout1Quiz2:" destination="Vn5-wb-KoC" eventType="touchUpInside" id="l12-GS-3Si"/>
+                                    <segue destination="KUR-Xo-WG1" kind="show" identifier="segueC2Q2" id="7uJ-NQ-LZP">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdq-4t-U5n">
+                                <rect key="frame" x="0.0" y="372" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="No">
+                                    <color key="titleColor" red="0.1971340674" green="0.1971340674" blue="0.1971340674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ajout1:" destination="thz-4F-Ee4" eventType="touchUpInside" id="Zmo-TH-byB"/>
+                                    <action selector="ajout2Quiz2:" destination="Vn5-wb-KoC" eventType="touchUpInside" id="wY1-oP-ad3"/>
+                                    <segue destination="KUR-Xo-WG1" kind="show" identifier="segueC1Q2" id="ad3-Ms-OQS">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="ajout1Q2" destination="vbg-E4-eb7" id="SAC-f2-aIs"/>
+                        <outlet property="ajout2Q2" destination="Bdq-4t-U5n" id="tKW-ph-o0e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ulz-It-p09" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2744.8000000000002" y="123.68815592203899"/>
+        </scene>
+        <!--Quiz Cig3 View Controller-->
+        <scene sceneID="dkJ-cS-Yw1">
+            <objects>
+                <viewController id="KUR-Xo-WG1" customClass="QuizCig3ViewController" customModule="resetIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Tl-hl-Vf2"/>
+                        <viewControllerLayoutGuide type="bottom" id="lUh-5t-fHK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TfQ-4I-V1d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Witch cigarette would you hate to give up ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laV-gG-xT4">
+                                <rect key="frame" x="16" y="87" width="343" height="57.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.99869414899999998" blue="0.99246617469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOT-yX-2af">
+                                <rect key="frame" x="0.0" y="290" width="375" height="66"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="8mI-f8-bU8"/>
+                                </constraints>
+                                <state key="normal" title="The first in the morning">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ajout1Quiz3:" destination="KUR-Xo-WG1" eventType="touchUpInside" id="xHt-B3-qPK"/>
+                                    <segue destination="faL-Od-eWN" kind="show" identifier="segueC1Q3" id="Rdo-o9-7Jn">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lge-O6-xCn">
+                                <rect key="frame" x="0.0" y="372" width="375" height="65"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="4Xt-om-Ree"/>
+                                </constraints>
+                                <state key="normal" title="Any other">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ajout2Quiz3:" destination="KUR-Xo-WG1" eventType="touchUpInside" id="G1C-pe-SG8"/>
+                                    <segue destination="faL-Od-eWN" kind="show" identifier="segueC2Q3" id="GSK-mb-M9d">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="laV-gG-xT4" firstAttribute="top" secondItem="0Tl-hl-Vf2" secondAttribute="bottom" constant="67" id="0Bi-Dx-FAj"/>
+                            <constraint firstItem="iOT-yX-2af" firstAttribute="leading" secondItem="TfQ-4I-V1d" secondAttribute="leading" id="Fu5-sg-kQQ"/>
+                            <constraint firstItem="iOT-yX-2af" firstAttribute="trailing" secondItem="Lge-O6-xCn" secondAttribute="trailing" id="PHU-Ev-wBh"/>
+                            <constraint firstItem="iOT-yX-2af" firstAttribute="centerX" secondItem="laV-gG-xT4" secondAttribute="centerX" id="ZB8-L0-F6M"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="laV-gG-xT4" secondAttribute="trailing" id="kBv-nn-o0W"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="laV-gG-xT4" secondAttribute="leading" id="mvG-7U-qAD"/>
+                            <constraint firstItem="iOT-yX-2af" firstAttribute="leading" secondItem="Lge-O6-xCn" secondAttribute="leading" id="pTi-93-zdm"/>
+                            <constraint firstItem="lUh-5t-fHK" firstAttribute="top" secondItem="Lge-O6-xCn" secondAttribute="bottom" constant="230" id="rfG-TY-LqF"/>
+                            <constraint firstItem="Lge-O6-xCn" firstAttribute="top" secondItem="iOT-yX-2af" secondAttribute="bottom" constant="16" id="tIg-8K-WPE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ajout1Q3" destination="iOT-yX-2af" id="yRM-Ru-LXY"/>
+                        <outlet property="ajout2Q3" destination="Lge-O6-xCn" id="pAd-Uy-UzN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ne6-Gd-Cuc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3565.5999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--Quiz Cig4 View Controller-->
+        <scene sceneID="4Bh-F6-wuT">
+            <objects>
+                <viewController id="faL-Od-eWN" customClass="QuizCig4ViewController" customModule="resetIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="stO-IC-ITk"/>
+                        <viewControllerLayoutGuide type="bottom" id="hOy-Ip-40R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M0W-1G-e4T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many cigarettes a day do you smoke ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcQ-Uq-dbN">
+                                <rect key="frame" x="59" y="79" width="256" height="57.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXC-2x-apy">
+                                <rect key="frame" x="0.0" y="269" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="10 or less">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gtA-6H-Ufa" kind="show" identifier="segueC1Q4" id="abp-OY-MWM">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wP8-qw-G5Z">
+                                <rect key="frame" x="0.0" y="349" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="11 - 20">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gtA-6H-Ufa" kind="show" identifier="segueC2Q4" id="JSE-8B-KVm">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCp-O0-Sgs">
+                                <rect key="frame" x="0.0" y="429" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="21 - 30">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gtA-6H-Ufa" kind="show" identifier="segueC3Q4" id="EZ2-lh-2iq">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7J7-Wk-tKW">
+                                <rect key="frame" x="0.0" y="510" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="31 or more">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gtA-6H-Ufa" kind="show" identifier="segueC4Q4" id="Pxa-Rn-0ay">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GcQ-Uq-dbN" firstAttribute="leading" secondItem="M0W-1G-e4T" secondAttribute="leadingMargin" constant="43" id="MXa-Lb-jjF"/>
+                            <constraint firstItem="GcQ-Uq-dbN" firstAttribute="top" secondItem="stO-IC-ITk" secondAttribute="bottom" constant="59" id="N5o-9l-Wzd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GcQ-Uq-dbN" secondAttribute="trailing" constant="44" id="ttv-0P-G26"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HCb-t2-ZY6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4389.6000000000004" y="123.68815592203899"/>
+        </scene>
+        <!--Quiz Cig5 View Controller-->
+        <scene sceneID="nw2-X8-Odk">
+            <objects>
+                <viewController id="gtA-6H-Ufa" customClass="QuizCig5ViewController" customModule="resetIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kAZ-OG-UV5"/>
+                        <viewControllerLayoutGuide type="bottom" id="d1c-s5-YLS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t8u-UY-F4t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhH-hc-gYe">
+                                <rect key="frame" x="0.0" y="367" width="375" height="65"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="No">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="upk-OW-nyH" kind="show" identifier="segueC2Q5" id="B4K-BH-1oa">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you smoke more frequently in the morning ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioz-9f-Zgp">
+                                <rect key="frame" x="16" y="61" width="343" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="ZTq-bm-j4n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNq-kC-wwX">
+                                <rect key="frame" x="0.0" y="283" width="375" height="65"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="AwU-O0-pdn"/>
+                                </constraints>
+                                <state key="normal" title="Yes">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="upk-OW-nyH" kind="show" identifier="segueC1Q5" id="iQM-ao-kQq">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JNq-kC-wwX" secondAttribute="trailing" id="0XA-Bf-hEV"/>
+                            <constraint firstItem="dhH-hc-gYe" firstAttribute="leading" secondItem="JNq-kC-wwX" secondAttribute="leading" id="2bW-Fs-Qn6"/>
+                            <constraint firstItem="dhH-hc-gYe" firstAttribute="top" secondItem="JNq-kC-wwX" secondAttribute="bottom" constant="19" id="Bpm-eq-cYx"/>
+                            <constraint firstItem="dhH-hc-gYe" firstAttribute="trailing" secondItem="JNq-kC-wwX" secondAttribute="trailing" id="Ffy-qD-tBl"/>
+                            <constraint firstItem="d1c-s5-YLS" firstAttribute="top" secondItem="dhH-hc-gYe" secondAttribute="bottom" constant="235" id="Q1t-hV-ZCK"/>
+                            <constraint firstItem="JNq-kC-wwX" firstAttribute="centerX" secondItem="ioz-9f-Zgp" secondAttribute="centerX" id="a3j-SH-Gwe"/>
+                            <constraint firstItem="ioz-9f-Zgp" firstAttribute="top" secondItem="kAZ-OG-UV5" secondAttribute="bottom" constant="41" id="bxq-9H-eKS"/>
+                            <constraint firstItem="ioz-9f-Zgp" firstAttribute="leading" secondItem="t8u-UY-F4t" secondAttribute="leadingMargin" id="ghX-oN-AX6"/>
+                            <constraint firstItem="JNq-kC-wwX" firstAttribute="leading" secondItem="t8u-UY-F4t" secondAttribute="leading" id="kat-SQ-OWj"/>
+                            <constraint firstItem="JNq-kC-wwX" firstAttribute="top" secondItem="t8u-UY-F4t" secondAttribute="top" constant="283" id="omk-cN-Xxz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fbk-WH-YUg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5204" y="123.68815592203899"/>
+        </scene>
+        <!--Quiz Cig6 View Controller-->
+        <scene sceneID="Krf-0L-9ya">
+            <objects>
+                <viewController id="upk-OW-nyH" customClass="QuizCig6ViewController" customModule="resetIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oxl-5O-XJR"/>
+                        <viewControllerLayoutGuide type="bottom" id="udi-oY-8Tm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XY6-qV-0bs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do you smoke even if you are sick in bed most of the day ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUY-5z-l87">
+                                <rect key="frame" x="23" y="107" width="328" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jet-3N-n3Z">
+                                <rect key="frame" x="0.0" y="282" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Yes">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9aj-gV-ZXW" kind="show" identifier="segueC1Q6" id="hDw-iq-v4H">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDP-CY-bed">
+                                <rect key="frame" x="0.0" y="365" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="No">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9aj-gV-ZXW" kind="show" identifier="segueC2Q6" id="h1p-8N-JEU">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="72D-2w-uEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5968.8000000000002" y="123.68815592203899"/>
+        </scene>
+        <!--Choix View Controller-->
+        <scene sceneID="hz8-UM-7R2">
+            <objects>
+                <viewController storyboardIdentifier="ChoixView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rdD-EI-xxK" customClass="ChoixViewController" customModule="resetIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DuR-pr-E2K"/>
+                        <viewControllerLayoutGuide type="bottom" id="iJb-n5-aa5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i1P-cW-Ery">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K89-FV-oV7">
+                                <rect key="frame" x="0.0" y="267" width="375" height="400"/>
+                                <state key="normal" title="Button" image="alcohol"/>
+                                <connections>
+                                    <segue destination="0XX-C8-fke" kind="show" id="SHI-cf-VRh">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42U-Zl-qbe">
+                                <rect key="frame" x="0.0" y="64" width="375" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="cigarette"/>
+                                <connections>
+                                    <segue destination="thz-4F-Ee4" kind="show" id="xFc-gB-TfW">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="K89-FV-oV7" firstAttribute="leading" secondItem="i1P-cW-Ery" secondAttribute="leading" id="0ii-zC-gl3"/>
+                            <constraint firstItem="iJb-n5-aa5" firstAttribute="top" secondItem="K89-FV-oV7" secondAttribute="bottom" id="4iT-qG-bfr"/>
+                            <constraint firstItem="iJb-n5-aa5" firstAttribute="top" secondItem="K89-FV-oV7" secondAttribute="bottom" id="PZA-0G-jM1"/>
+                            <constraint firstAttribute="trailing" secondItem="K89-FV-oV7" secondAttribute="trailing" id="xuL-a7-t0n"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zyC-PM-9C9"/>
+                    <connections>
+                        <outlet property="choixAlchool" destination="K89-FV-oV7" id="Xns-jO-3rZ"/>
+                        <outlet property="choixCigarette" destination="42U-Zl-qbe" id="Sco-cC-Ijt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q6M-ZT-r8J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="809.14542728635683"/>
+        </scene>
+        <!--Quiz Alcohol1 View Controller-->
+        <scene sceneID="hyc-Vt-3eX">
+            <objects>
+                <viewController id="0XX-C8-fke" customClass="QuizAlcohol1ViewController" customModule="resetIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mVI-xv-Agn"/>
+                        <viewControllerLayoutGuide type="bottom" id="NXK-Fh-ce5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d2L-qA-WCR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How often do you have a drink containing alchool ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nr0-kP-IbH">
+                                <rect key="frame" x="16" y="65" width="343" height="107"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YlD-Y5-zeC">
+                                <rect key="frame" x="0.0" y="318" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Monthly or less">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="y3X-vX-XdU" kind="show" identifier="SegueA2Q1" id="vzn-uA-NBH">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVo-E3-lZU">
+                                <rect key="frame" x="0.0" y="391" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="2 to 4 times a month">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="y3X-vX-XdU" kind="show" identifier="SegueA3Q1" id="43F-2x-132">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vah-cF-z9o">
+                                <rect key="frame" x="0.0" y="464" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="2 to 3 times a week">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="y3X-vX-XdU" kind="show" identifier="SegueA4Q1" id="bEi-ho-CuT">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0f-R9-I2v">
+                                <rect key="frame" x="0.0" y="537" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="4 or more times a week">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="y3X-vX-XdU" kind="show" identifier="SegueA5Q1" id="HCz-PT-NNE">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mfa-jt-X6v">
+                                <rect key="frame" x="0.0" y="245" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Never">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NXK-Fh-ce5" firstAttribute="top" secondItem="Nr0-kP-IbH" secondAttribute="bottom" constant="495" id="cc3-f4-HsX"/>
+                            <constraint firstItem="Nr0-kP-IbH" firstAttribute="leading" secondItem="d2L-qA-WCR" secondAttribute="leadingMargin" id="coD-qH-g9u"/>
+                            <constraint firstItem="Nr0-kP-IbH" firstAttribute="trailing" secondItem="d2L-qA-WCR" secondAttribute="trailingMargin" id="nmf-wn-u4u"/>
+                            <constraint firstItem="Nr0-kP-IbH" firstAttribute="top" secondItem="mVI-xv-Agn" secondAttribute="bottom" constant="45" id="ylM-vk-g8x"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dgj-cw-mbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1973.5999999999999" y="1109.5952023988007"/>
+        </scene>
+        <!--Quiz Alcohol2 View Controller-->
+        <scene sceneID="nSD-Id-QoC">
+            <objects>
+                <viewController id="y3X-vX-XdU" customClass="QuizAlcohol2ViewController" customModule="resetIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dOV-cq-DWV"/>
+                        <viewControllerLayoutGuide type="bottom" id="UBd-IN-bI8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ykd-eh-CNp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many drinks containing alcohol do you have in a typical day when you are drinking ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Owf-d3-VKG">
+                                <rect key="frame" x="16" y="103" width="343" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFI-hZ-X4f">
+                                <rect key="frame" x="0.0" y="295" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="1 or 2">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dlS-nR-6Ts" kind="show" identifier="SegueA1Q2" id="iS3-nq-X9A">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXQ-u9-lpB">
+                                <rect key="frame" x="0.0" y="368" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="3 or 4">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dlS-nR-6Ts" kind="show" identifier="SegueA2Q2" id="cZ3-qg-1bL">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Mc-dx-0qm">
+                                <rect key="frame" x="0.0" y="441" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="5 or 6">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dlS-nR-6Ts" kind="show" identifier="SegueA3Q2" id="6ZQ-t3-L2Q">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ax7-HJ-7e9">
+                                <rect key="frame" x="0.0" y="514" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="7, 8 or 9">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dlS-nR-6Ts" kind="show" identifier="SegueA4Q2" id="nJM-GL-GAS">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFw-Mx-cQ6">
+                                <rect key="frame" x="0.0" y="587" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="10 or more">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dlS-nR-6Ts" kind="show" identifier="SegueA5Q2" id="4uY-x6-gMS">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ts-VU-0Eq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2808.8000000000002" y="1109.5952023988007"/>
+        </scene>
+        <!--Quiz Alcohol3 View Controller-->
+        <scene sceneID="eiB-HI-67L">
+            <objects>
+                <viewController id="dlS-nR-6Ts" customClass="QuizAlcohol3ViewController" customModule="resetIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zKZ-XJ-QB6"/>
+                        <viewControllerLayoutGuide type="bottom" id="1nO-Xc-6Br"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ywr-HT-RLv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How often do you have 6 or more drinks on an occasion ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66Y-i1-qwH">
+                                <rect key="frame" x="16" y="105" width="343" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqV-HL-TRK">
+                                <rect key="frame" x="16" y="245" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Never">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kOl-i0-PEH" kind="show" identifier="SegueA1Q3" id="LI2-93-0Pk">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKN-36-RRZ">
+                                <rect key="frame" x="16" y="318" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Less than monthly">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kOl-i0-PEH" kind="show" identifier="SegueA2Q3" id="SqY-tZ-pQm">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vds-nK-aGz">
+                                <rect key="frame" x="16" y="391" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Monthly">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kOl-i0-PEH" kind="show" identifier="SegueA3Q3" id="X6f-1q-krm">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjH-Oy-N7y">
+                                <rect key="frame" x="16" y="464" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Weekly">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kOl-i0-PEH" kind="show" identifier="SegueA4Q3" id="NVQ-KF-ngQ">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBz-gJ-5Sd">
+                                <rect key="frame" x="16" y="537" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Daily or mostly daily">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kOl-i0-PEH" kind="show" identifier="SegueA5Q3" id="dZN-2d-WBB">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rR6-1E-X6G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3566" y="1110"/>
+        </scene>
+        <!--Quiz Alcohol4 View Controller-->
+        <scene sceneID="gWO-tq-PZZ">
+            <objects>
+                <viewController id="kOl-i0-PEH" customClass="QuizAlcohol4ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CTD-dF-4Oj"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Ga-ON-w9q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZCK-mI-8yz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaV-4c-zKn">
+                                <rect key="frame" x="16" y="245" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Never">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8Mm-2h-JOe" kind="show" identifier="SegueA1Q3" id="ZyM-1K-NQQ">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUY-l7-N6M">
+                                <rect key="frame" x="16" y="318" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Less than monthly">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8Mm-2h-JOe" kind="show" identifier="SegueA2Q3" id="lqV-QD-rvP">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78d-OJ-aHD">
+                                <rect key="frame" x="16" y="391" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Monthly">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8Mm-2h-JOe" kind="show" identifier="SegueA3Q3" id="ahF-cN-t5x">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghc-FQ-zIL">
+                                <rect key="frame" x="16" y="464" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Weekly">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8Mm-2h-JOe" kind="show" identifier="SegueA4Q3" id="J1M-SC-I8F">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dzo-gO-OFW">
+                                <rect key="frame" x="16" y="537" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Daily or mostly daily">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8Mm-2h-JOe" kind="show" identifier="SegueA5Q3" id="DZm-7O-PgL">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How often during the last year have you found that you were not been able to stop drinking  one you has started" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TX5-Vb-W9R">
+                                <rect key="frame" x="16" y="89" width="343" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iCf-ag-eqA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4312.8000000000002" y="1109.5952023988007"/>
+        </scene>
+        <!--Quiz Alcohol5 View Controller-->
+        <scene sceneID="en4-dq-v3l">
+            <objects>
+                <viewController id="8Mm-2h-JOe" customClass="QuizAlcohol5ViewController" customModule="resetIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="isn-HE-M01"/>
+                        <viewControllerLayoutGuide type="bottom" id="NVr-e4-QVC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ftU-83-eiw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coI-9K-Hvt">
+                                <rect key="frame" x="16" y="245" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Never">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LeO-68-q7u" kind="show" identifier="SegueA6Q1" id="oY1-M2-RUj">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhe-Ly-SgW">
+                                <rect key="frame" x="16" y="318" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Less than monthly">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LeO-68-q7u" kind="show" identifier="SegueA6Q2" id="o1U-Wa-sWr">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdO-qS-N3z">
+                                <rect key="frame" x="16" y="391" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Monthly">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LeO-68-q7u" kind="show" identifier="SegueA6Q3" id="KIH-K8-JtS">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhw-3c-Pe0">
+                                <rect key="frame" x="16" y="464" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Weekly">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LeO-68-q7u" kind="show" identifier="SegueA6Q4" id="lz4-2k-WaN">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1o-Do-k2T">
+                                <rect key="frame" x="16" y="537" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Daily or mostly daily">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LeO-68-q7u" kind="show" identifier="SegueA6Q5" id="gHD-jT-DvR">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How often during the last year have you failed to do what was normally expected from you because of drinking ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5XP-Z8-Zn4">
+                                <rect key="frame" x="16" y="77" width="343" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YHN-MB-Ydd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5055.1999999999998" y="1109.5952023988007"/>
+        </scene>
+        <!--Quiz Alcohol6 View Controller-->
+        <scene sceneID="iMX-58-8S4">
+            <objects>
+                <viewController id="LeO-68-q7u" customClass="QuizAlcohol6ViewController" customModule="resetIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BZf-hP-gi3"/>
+                        <viewControllerLayoutGuide type="bottom" id="btL-nY-mov"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cus-in-p03">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMI-ae-lyF">
+                                <rect key="frame" x="16" y="245" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Never">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JGG-vw-2cS" kind="show" identifier="SegueA7Q1" id="Tdv-uc-LAk">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4D-Cy-mOb">
+                                <rect key="frame" x="16" y="318" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Less than monthly">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JGG-vw-2cS" kind="show" identifier="SegueA7Q2" id="wUc-xf-urU">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAU-s9-qLy">
+                                <rect key="frame" x="16" y="391" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Monthly">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JGG-vw-2cS" kind="show" identifier="SegueA7Q3" id="fV3-TE-FRr">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udu-JO-Vdp">
+                                <rect key="frame" x="16" y="464" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Weekly">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JGG-vw-2cS" kind="show" identifier="SegueA7Q4" id="PDP-oi-Haw">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hni-Bq-pbQ">
+                                <rect key="frame" x="16" y="537" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Daily or mostly daily">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JGG-vw-2cS" kind="show" identifier="SegueA7Q5" id="tIN-ec-lHl">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hh-FM-S7y">
+                                <rect key="frame" x="16" y="77" width="343" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">How often during the last year have you needed a first drink in the morning to get yourself going after a heavy drinking session ?</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D2T-2v-BI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5814" y="1110"/>
+        </scene>
+        <!--Quiz Alcohol7 View Controller-->
+        <scene sceneID="MLq-KJ-r5n">
+            <objects>
+                <viewController id="JGG-vw-2cS" customClass="QuizAlcohol7ViewController" customModule="resetIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7dd-M5-mvM"/>
+                        <viewControllerLayoutGuide type="bottom" id="hCs-sa-qba"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QxF-q1-fAZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgq-Lj-1MO">
+                                <rect key="frame" x="16" y="245" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Never">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="stI-KM-vz2" kind="show" identifier="SegueA8Q1" id="jcP-2c-K7m">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Var-h9-tcT">
+                                <rect key="frame" x="16" y="318" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Less than monthly">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="stI-KM-vz2" kind="show" identifier="SegueA8Q2" id="orx-GO-Edc">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9a-gG-msu">
+                                <rect key="frame" x="16" y="391" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Monthly">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="stI-KM-vz2" kind="show" identifier="SegueA8Q3" id="sLm-lm-INK">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNv-3O-QLu">
+                                <rect key="frame" x="16" y="464" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Weekly">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="stI-KM-vz2" kind="show" identifier="SegueA8Q4" id="uog-1h-kBo">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFP-gP-4pe">
+                                <rect key="frame" x="16" y="537" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Daily or mostly daily">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="stI-KM-vz2" kind="show" identifier="SegueA8Q5" id="zeg-9i-Wsv">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How often during the last year have you had a feeling of guilt or remorse after drinking ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hk7-kt-cVI">
+                                <rect key="frame" x="16" y="77" width="343" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Jz-UW-IbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6582" y="1110"/>
+        </scene>
+        <!--Quiz Alcohol8 View Controller-->
+        <scene sceneID="L1i-bp-DGY">
+            <objects>
+                <viewController id="stI-KM-vz2" customClass="QuizAlcohol8ViewController" customModule="resetIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gpa-UZ-LZg"/>
+                        <viewControllerLayoutGuide type="bottom" id="vJH-Qx-oHy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dSt-f3-NWd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tv7-Ka-WDU">
+                                <rect key="frame" x="16" y="245" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Never">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="p9V-L4-GwV" kind="show" identifier="SegueA9Q1" id="eQX-Va-DCA">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dF-M2-nSx">
+                                <rect key="frame" x="16" y="318" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Less than monthly">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="p9V-L4-GwV" kind="show" identifier="SegueA9Q2" id="ZEK-2s-uVV">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iA7-5A-ua1">
+                                <rect key="frame" x="16" y="391" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Monthly">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="p9V-L4-GwV" kind="show" identifier="SegueA9Q3" id="sqX-8q-FOE">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMZ-gB-vhz">
+                                <rect key="frame" x="16" y="464" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Weekly">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="p9V-L4-GwV" kind="show" identifier="SegueA9Q4" id="KMG-cr-hSK">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnU-Yn-Hso">
+                                <rect key="frame" x="16" y="537" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Daily or mostly daily">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="p9V-L4-GwV" kind="show" identifier="SegueA9Q5" id="wZH-0G-LFo">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How often during the last year have you been unable to remember what happened in the night before because of the drinking ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEY-uY-iJJ">
+                                <rect key="frame" x="16" y="77" width="343" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C0P-ve-dwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7385" y="1110"/>
+        </scene>
+        <!--Quiz Score View Controller-->
+        <scene sceneID="1jR-fN-J7K">
+            <objects>
+                <viewController id="9aj-gV-ZXW" customClass="QuizScoreViewController" customModule="resetIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h34-tR-QRo"/>
+                        <viewControllerLayoutGuide type="bottom" id="J36-8p-scw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qpr-2p-LFg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H O M E" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FS-v3-mpG">
+                                <rect key="frame" x="0.0" y="228" width="375" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnT-Cp-TdI">
+                                <rect key="frame" x="313" y="28" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="v4w-OD-rqT" kind="show" id="XyX-1S-kZE">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4FS-v3-mpG" firstAttribute="leading" secondItem="Qpr-2p-LFg" secondAttribute="leading" id="GnW-Ze-Lr7"/>
+                            <constraint firstAttribute="trailing" secondItem="4FS-v3-mpG" secondAttribute="trailing" id="iL6-hx-qEy"/>
+                            <constraint firstItem="4FS-v3-mpG" firstAttribute="top" secondItem="h34-tR-QRo" secondAttribute="bottom" constant="208" id="v06-cG-Hzi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scoreText" destination="4FS-v3-mpG" id="7bY-Pp-HGP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V8z-4e-iXi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7872.8000000000002" y="123.68815592203899"/>
+        </scene>
+        <!--Achivements View Controller-->
+        <scene sceneID="LOq-Ya-4MZ">
+            <objects>
+                <viewController storyboardIdentifier="Achi" useStoryboardIdentifierAsRestorationIdentifier="YES" id="v4w-OD-rqT" customClass="AchivementsViewController" customModule="resetIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VYb-kE-l5T"/>
+                        <viewControllerLayoutGuide type="bottom" id="jbD-nB-P4X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fEt-76-1O4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="QuizTable" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Be-Hv-cqq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="mycell" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableQuiz" rowHeight="90" id="3YI-Ad-GTh" userLabel="mycell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3YI-Ad-GTh" id="bok-jW-HH2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mb9-Ah-QMd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="122" height="90"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BO-fX-OWq">
+                                                    <rect key="frame" x="143" y="34" width="232" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="mb9-Ah-QMd" secondAttribute="bottom" id="8AT-gb-rog"/>
+                                                <constraint firstItem="mb9-Ah-QMd" firstAttribute="leading" secondItem="bok-jW-HH2" secondAttribute="leading" id="J6J-GI-6Ws"/>
+                                                <constraint firstAttribute="trailing" secondItem="3BO-fX-OWq" secondAttribute="trailing" id="L6j-BD-iKh"/>
+                                                <constraint firstItem="3BO-fX-OWq" firstAttribute="centerY" secondItem="mb9-Ah-QMd" secondAttribute="centerY" id="Vi9-OP-9uF"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="mb9-Ah-QMd" secondAttribute="trailing" constant="245" id="mpK-Pq-o5Z"/>
+                                                <constraint firstItem="3BO-fX-OWq" firstAttribute="leading" secondItem="mb9-Ah-QMd" secondAttribute="trailing" constant="21" id="nSe-Fa-xvQ"/>
+                                                <constraint firstItem="mb9-Ah-QMd" firstAttribute="top" secondItem="bok-jW-HH2" secondAttribute="top" id="uTc-Nk-bEb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Be-Hv-cqq" firstAttribute="top" secondItem="fEt-76-1O4" secondAttribute="top" id="YgT-Ps-sC3"/>
+                            <constraint firstAttribute="trailing" secondItem="1Be-Hv-cqq" secondAttribute="trailing" id="jxa-fO-LFD"/>
+                            <constraint firstItem="1Be-Hv-cqq" firstAttribute="leading" secondItem="fEt-76-1O4" secondAttribute="leading" id="rCl-ef-Pd4"/>
+                            <constraint firstItem="jbD-nB-P4X" firstAttribute="top" secondItem="1Be-Hv-cqq" secondAttribute="bottom" id="xV2-Iu-GwI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="1Be-Hv-cqq" id="mYh-Qc-y0E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Moc-FD-yjZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9704.7999999999993" y="-54.422788605697157"/>
+        </scene>
+        <!--Quiz Alcohol9 View Controller-->
+        <scene sceneID="PfP-a5-wrQ">
+            <objects>
+                <viewController id="p9V-L4-GwV" customClass="QuizAlcohol9ViewController" customModule="resetIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P3W-GQ-E0A"/>
+                        <viewControllerLayoutGuide type="bottom" id="XC7-fy-cYE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yst-cv-Tch">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLL-9s-2Rd">
+                                <rect key="frame" x="16" y="245" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="No">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IGv-e8-dGQ" kind="show" identifier="SegueA10Q1" id="tdP-YU-Oam">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bK-DQ-wVV">
+                                <rect key="frame" x="16" y="332" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Yes but in the last year">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IGv-e8-dGQ" kind="show" identifier="SegueA10Q2" id="UBs-2e-1to">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Have you or someone else been injured because of your drinking ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jb-ma-t2X">
+                                <rect key="frame" x="16" y="77" width="343" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n19-Nw-x0g">
+                                <rect key="frame" x="16" y="421" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Yes during the last year">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IGv-e8-dGQ" kind="show" identifier="SegueA10Q3" id="6FN-4o-G38">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vs6-1V-BWQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8140" y="1110"/>
+        </scene>
+        <!--Quiz Alcohol10 View Controller-->
+        <scene sceneID="83n-Tf-PU1">
+            <objects>
+                <viewController id="IGv-e8-dGQ" customClass="QuizAlcohol10ViewController" customModule="resetIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JmF-Rl-3fd"/>
+                        <viewControllerLayoutGuide type="bottom" id="UIn-yp-QzJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8J6-Cj-Cx5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NlQ-Mq-Ikc">
+                                <rect key="frame" x="16" y="245" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="No">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9aj-gV-ZXW" kind="show" identifier="SegueA11Q1" id="SY6-kM-puz">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1N-2a-ccp">
+                                <rect key="frame" x="16" y="332" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Yes but in the last year">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9aj-gV-ZXW" kind="show" identifier="SegueA11Q2" id="09M-O3-xHi">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Has a relative, friend, doctor or other health care worker been concerned by your drinking or suggested ou cut down ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBX-Cz-q1O">
+                                <rect key="frame" x="16" y="77" width="343" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6c-7H-W89">
+                                <rect key="frame" x="16" y="421" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80308026079999995" green="0.69832575320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Yes during the last year">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9aj-gV-ZXW" kind="show" identifier="SegueA11Q3" id="UKa-gc-3mT">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2LM-H2-qbd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8866" y="1110"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alcohol" width="400" height="400"/>
+        <image name="cigarette" width="400" height="400"/>
+        <image name="monokuma" width="455" height="541"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="tFD-YR-cJE"/>
+        <segue reference="ad3-Ms-OQS"/>
+        <segue reference="Rdo-o9-7Jn"/>
+        <segue reference="abp-OY-MWM"/>
+        <segue reference="iQM-ao-kQq"/>
+        <segue reference="vzn-uA-NBH"/>
+        <segue reference="4uY-x6-gMS"/>
+        <segue reference="NVQ-KF-ngQ"/>
+        <segue reference="DZm-7O-PgL"/>
+        <segue reference="oY1-M2-RUj"/>
+        <segue reference="fV3-TE-FRr"/>
+        <segue reference="orx-GO-Edc"/>
+        <segue reference="eQX-Va-DCA"/>
+        <segue reference="UBs-2e-1to"/>
+        <segue reference="UKa-gc-3mT"/>
+    </inferredMetricsTieBreakers>
+</document>
